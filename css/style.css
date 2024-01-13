@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(275, 100%, 97%);    
+}
+
+section{    
+    min-height: 100vh;
+}
+
+.banner{
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+}
+
+.container {    
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    min-height: 65vh;
+}
+
+.faq-container {
+    max-width: 500px;
+    position: absolute;
+    top: -20%;
+    height: auto;
+    padding: 25px;
+    margin: 0 2%;
+    background-color: white;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.faq-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    width: 25px;
+}
+
+.faq-title h1{
+    font-size: 34px;
+    color: hsl(292, 42%, 14%);
+}
+
+.faq-question{        
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+}
+
+.faq-question:last-of-type{
+    border: 0;
+}
+
+.faq-question-title{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question-title h3{
+    font-size: 16px;
+    color: hsl(292, 42%, 14%);
+    transition: .3s;
+}
+
+.faq-question-title h3:hover{
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+
+.faq-question-title img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.faq-response{    
+    transition: .3s;
+}
+
+.faq-response p{
+    	font-size: 14px;
+        margin-top: 10px;
+        color: gray;
+}
+
+.hidden{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0s ease-in-out, visibility 0s 0.3s;
+}
+
+.show{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, visibility 0s;
+}
+
+@media (max-width: 375px){
+.banner{
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+    min-height: 25vh;
+}
+
+    .container {    
+        height: 75vh;
+    }
+}

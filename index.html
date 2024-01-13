@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONTES PERSONALIZADAS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!---->
+    <title>FAQ Accordion</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="banner"></div>
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-title">
+                        <img src="assets/images/icon-star.svg" alt="icon star">
+                        <h1>FAQs</h1>
+                    </div>
+
+                    <div class="faq-question">
+                        <div class="faq-question-title">
+                            <h3>What is Frontend Mentor, and how will it help me?</h3>
+                            <img id="icon1" onclick="showResponse('res1', 'icon1')" src="assets/images/icon-minus.svg" alt="icon minus">
+                        </div>
+                        <div id="res1" class="faq-response show">
+                            <p>
+                                Frontend Mentor offers realistic coding challenges to help developers
+                                improve their frontend coding skills with projects in HTML, CSS, and 
+                                JavaScript. It's suitable for all levels and ideal for portfolio building.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <div class="faq-question-title">
+                            <h3>Is Frontend Mentor free?</h3>
+                            <img id="icon2" onclick="showResponse('res2', 'icon2')" src="assets/images/icon-plus.svg" alt="icon plus">
+                        </div>
+                        <div id="res2" class="faq-response hidden">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure 
+                                laboriosam ipsum dolor rem eveniet magni beatae, cum deleniti vero 
+                                natus maxime quo quam, aut nulla incidunt obcaecati excepturi iusto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <div class="faq-question-title">
+                            <h3>Can I use Frontend Mentor projects in my portfolio?</h3>
+                            <img id="icon3" onclick="showResponse('res3', 'icon3')" src="assets/images/icon-plus.svg" alt="icon plus">
+                        </div>
+                        <div id="res3" class="faq-response hidden">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure 
+                                laboriosam ipsum dolor rem eveniet magni beatae, cum deleniti vero 
+                                natus maxime quo quam, aut nulla incidunt obcaecati excepturi iusto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <div class="faq-question-title">
+                            <h3>How can I get help if I'm stuck on a challenge?</h3>
+                            <img id="icon4" onclick="showResponse('res4', 'icon4')" src="assets/images/icon-plus.svg" alt="icon plus">
+                        </div>
+                        <div id="res4" class="faq-response hidden">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure 
+                                laboriosam ipsum dolor rem eveniet magni beatae, cum deleniti vero 
+                                natus maxime quo quam, aut nulla incidunt obcaecati excepturi iusto.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>   
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
